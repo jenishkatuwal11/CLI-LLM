@@ -1,0 +1,35 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files
+.env
+.env.local
+
+# Logs & history
+*.log
+*.tmp
+*.temp
+.history
+*.jsonl
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
