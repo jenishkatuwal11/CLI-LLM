@@ -112,20 +112,23 @@ python -m llm_cli chat \
 
 ## Project Structure
 
+```
 CLI-LLM/
-├── .venv/ # Virtual environment (created locally)
-├── .env # Local secrets/config (not in git)
-├── .env.example # Template env file
-├── pyproject.toml # Project metadata & dependencies
-├── README.md # Project documentation
+├── .venv/                 # Virtual environment (created locally)
+├── .env                   # Local secrets/config (not in git)
+├── .env.example           # Template env file
+├── pyproject.toml         # Project metadata & dependencies
+├── README.md              # Project documentation
 └── src/
-└── llm_cli/
-├── **init**.py # Package marker
-├── **main**.py # Entry point for `python -m llm_cli`
-├── cli.py # CLI commands (chat, models)
-├── config.py # Environment & chat option settings
-├── history.py # JSONL history persistence
-└── router.py # HTTP client for API requests
+    └── llm_cli/
+        ├── __init__.py    # Package marker
+        ├── __main__.py    # Entry point for `python -m`
+        ├── cli.py         # CLI commands (chat, models)
+        ├── config.py      # Environment & chat option settings
+        ├── history.py     # JSONL history persistence
+        └── router.py      # HTTP client for API requests
+```
+
 
 ## Environment Variables
 
